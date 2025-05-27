@@ -5,7 +5,7 @@ import '../pdf_manipulation.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:open_file/open_file.dart';
 
-import '../pdf_screen.dart';
+import 'pdf_screen.dart';
 
 class ManipulationScreen extends StatelessWidget {
   const ManipulationScreen({Key? key}) : super(key: key);
@@ -285,13 +285,6 @@ class ManipulationScreen extends StatelessWidget {
           TextButton(
             onPressed: () => Navigator.pop(context),
             child: const Text('OK'),
-          ),
-          TextButton(
-            onPressed: () {
-              Navigator.pop(context);
-              _openPdfFolder(context);
-            },
-            child: const Text('Open Folder'),
           ),
         ],
       ),
